@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Score">
+
+    <Button
+        android:id="@+id/btn_Score_Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <LinearLayout
+        android:id="@+id/panoDexia"
+        android:layout_width="198dp"
+        android:layout_height="180dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/panoAristera"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView_Score_teamB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="#070707"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView_Score_scoreB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="36sp" />
+
+        <EditText
+            android:id="@+id/editText_Score_InputB"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="@string/zero"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/panoAristera"
+        android:layout_width="198dp"
+        android:layout_height="180dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@+id/panoDexia"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView_Score_teamA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView_Score_scoreA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="36sp" />
+
+        <EditText
+            android:id="@+id/editText_Score_InputA"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="@string/zero"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/katoAristera"
+        android:layout_width="125dp"
+        android:layout_height="407dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline3">
+
+        <Switch
+            android:id="@+id/switch_Score_Tichu_TeamA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:scaleX="1.3"
+            android:scaleY="1.3"
+            android:checked="false"
+            android:layout_marginRight="10dp" />
+
+        <Switch
+            android:id="@+id/switch_Score_No_Tichu_TeamA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:scaleX="1.3"
+            android:scaleY="1.3"
+            android:checked="false"
+            android:layout_marginRight="10dp" />
+
+        <Switch
+            android:id="@+id/switch_Score_GrandTichu_TeamA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:scaleX="1.3"
+            android:scaleY="1.3"
+            android:checked="false"
+            android:layout_marginRight="10dp" />
+
+        <Switch
+            android:id="@+id/switch_Score_No_GrandTichu_TeamA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:scaleX="1.3"
+            android:scaleY="1.3"
+            android:checked="false"
+            android:layout_marginRight="10dp" />
+
+        <Switch
+            android:id="@+id/switch_Score_Double_TeamA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:scaleX="1.3"
+            android:scaleY="1.3"
+            android:checked="false"
+            android:layout_marginRight="10dp" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="247dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="188dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="659dp" />
+
+    <LinearLayout
+        android:id="@+id/katoDexia"
+        android:layout_width="125dp"
+        android:layout_height="407dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline3">
+
+        <Switch
+            android:id="@+id/switch_Score_Tichu_TeamB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:scaleX="1.3"
+            android:scaleY="1.3"
+            android:checked="false"
+            android:layout_marginRight="45dp" />
+
+        <Switch
+            android:id="@+id/switch_Score_No_Tichu_TeamB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:scaleX="1.3"
+            android:scaleY="1.3"
+            android:checked="false"
+            android:layout_marginRight="45dp" />
+
+        <Switch
+            android:id="@+id/switch_Score_GrandTichu_TeamB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:scaleX="1.3"
+            android:scaleY="1.3"
+            android:checked="false"
+            android:layout_marginRight="45dp" />
+
+        <Switch
+            android:id="@+id/switch_Score_No_GrandTichu_TeamB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:scaleX="1.3"
+            android:scaleY="1.3"
+            android:checked="false"
+            android:layout_marginRight="45dp" />
+
+        <Switch
+            android:id="@+id/switch_Score_Double_TeamB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:scaleX="1.3"
+            android:scaleY="1.3"
+            android:checked="false"
+            android:layout_marginRight="45dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/katoMesaio"
+        android:layout_width="149dp"
+        android:layout_height="407dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="25dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@+id/katoDexia"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/katoAristera"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Score_Submit"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textView_Score_Tichu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/tichu"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView_Score_No_Tichu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/lost_tichu"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView_Score_GrandTichu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/grand_tichu"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView_Score_No_GrandTichu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/lost_Grand_Tichu"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView_Score_Double"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/double_Win"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_Score_Rounds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:text="@string/rounds" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

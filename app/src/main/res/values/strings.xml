@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Tichou Counter</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="startingTitle">Tichu Counter</string>
+    <string name="newGame">New Game</string>
+    <string name="omadaA">First Team Name</string>
+    <string name="omadaB">Second Team Name</string>
+    <string name="writeHere">Write here ...</string>
+    <string name="start">Lets Start</string>
+    <string name="tichu">Tichu</string>
+    <string name="lost_tichu">Lost Tichu</string>
+    <string name="grand_tichu">Grand Tichu</string>
+    <string name="lost_Grand_Tichu">Lost Grand Tichu</string>
+    <string name="double_Win">Double Win</string>
+    <string name="submit">Submit Score</string>
+    <string name="rounds">Show Score Rounds</string>
+    <string name="zero">0</string>
+</resources>
